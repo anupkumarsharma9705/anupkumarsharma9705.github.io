@@ -1,54 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anup Kumar Sharma — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
-    /* quick minimal styling if you skip styles.css */
-    body{font-family:system-ui,Arial;padding:32px;max-width:900px;margin:auto;line-height:1.6}
-    header{display:flex;justify-content:space-between;align-items:center}
-    nav a{margin-left:12px;text-decoration:none}
-    .btn{border:1px solid #ddd;padding:8px 12px;border-radius:8px}
-    h1{margin:0} section{margin:32px 0} .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-    footer{margin-top:48px;font-size:.9rem;color:#666}
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header { background: #222; color: #fff; padding: 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin: 5px 0; }
+    nav { margin-top: 10px; }
+    nav a { color: #fff; text-decoration: none; margin: 0 10px; }
+    section { padding: 40px 20px; max-width: 900px; margin: auto; }
+    h2 { color: #222; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+    ul { list-style: none; padding: 0; }
+    ul li { margin-bottom: 10px; }
+    a { color: #0073e6; }
+    footer { background: #222; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+    .btn { background: #0073e6; color: #fff; padding: 10px 15px; border-radius: 5px; text-decoration: none; }
+    .btn:hover { background: #005bb5; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
+    <h1>Anup Kumar Sharma</h1>
+    <p>Computer Science Undergraduate | Software Developer | Cybersecurity Enthusiast</p>
     <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="resume.pdf" class="btn">Download Résumé</a>
-      <a href="mailto:you@email.com" class="btn">Contact</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+      <a href="https://drive.google.com/file/d/1FUMfknhpnLak-4HgapKsYs9KuLDVP25V/view?usp=sharing" class="btn" target="_blank">Download Résumé</a>
     </nav>
   </header>
 
   <section id="about">
-    <h2>About</h2>
-    <p>Entry-level Software Developer focusing on web, APIs, and IoT. I enjoy building clean, reliable systems.</p>
+    <h2>Professional Summary</h2>
+    <p>Passionate and technology-driven Computer Science undergraduate with a strong academic foundation in software development, systems design, and networking. Skilled in problem-solving and eager to apply technical knowledge to real-world challenges in a dynamic IT environment as part of a collaborative team.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech in Computer Science</strong> – St. Peter’s Engineering College, Hyderabad (2025) | CGPA: 7.73/10</li>
+      <li><strong>Intermediate</strong> – Sree Chaitanya Junior College, Hyderabad (2021) | 93.4%</li>
+      <li><strong>High School</strong> – Navodaya High School, Hyderabad (2019) | Grade: 8.8/10</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, C++, SQL</li>
+      <li><strong>Frameworks & Libraries:</strong> React</li>
+      <li><strong>Databases:</strong> MySQL, PostgreSQL</li>
+      <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Tools:</strong> whois, theHarvester, whatweb</li>
+      <li><strong>OS:</strong> Windows, Linux</li>
+      <li><strong>Concepts:</strong> TCP/IP, OSI Model, OOPs</li>
+    </ul>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="grid">
-      <article>
-        <h3>Project One</h3>
-        <p>Short description of what it does and the stack used.</p>
-        <p><a href="https://github.com/YOUR-USERNAME/project-one">Code</a> · <a href="#">Live</a></p>
-      </article>
-      <article>
-        <h3>Project Two</h3>
-        <p>Short description. What problem does it solve?</p>
-        <p><a href="https://github.com/YOUR-USERNAME/project-two">Code</a></p>
-      </article>
-    </div>
+    <ul>
+      <li><strong>EmotionEcho – Real-Time Facial Emotion Recognition System</strong><br>
+        <em>Tools:</em> OpenCV, DeepFace, Python<br>
+        Implemented real-time facial emotion recognition from webcam feeds, applied optimization techniques, and gained experience in Python, image processing, and AI security challenges.
+      </li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li><a href="https://www.coursera.org" target="_blank">Introduction to Front-End Development – Meta (Coursera), 2024</a></li>
+      <li><a href="https://www.coursera.org" target="_blank">Fundamentals of Java Programming – Board Infinity (Coursera), 2024</a></li>
+      <li><a href="https://www.netacad.com" target="_blank">Introduction to CyberSecurity – Cisco Networking Academy, 2024</a></li>
+      <li><a href="https://www.ibm.com" target="_blank">Vulnerability Management – IBM SkillsBuild, 2025</a></li>
+      <li><a href="https://www.ibm.com" target="_blank">Governance, Risk, Compliance, and Data Privacy – IBM SkillsBuild, 2025</a></li>
+      <li><a href="https://www.credly.com/badges/b7858bff-dec8-4795-a123-4a50f2b7fcca/public_url" target="_blank">Credly Badge – Front-End Certification</a></li>
+      <li><a href="https://www.credly.com/badges/0760c8f2-50af-4a0b-ab72-514aecba4f74/public_url" target="_blank">Credly Badge – Java Programming</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:anupks9705@gmail.com">anupks9705@gmail.com</a></p>
+    <p><strong>Phone:</strong> +91 9347261072</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aks9705" target="_blank">linkedin.com/in/aks9705</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/anupkumarsharma9705" target="_blank">github.com/anupkumarsharma9705</a></p>
   </section>
 
   <footer>
-    © <span id="y"></span> Your Name · <a href="https://github.com/YOUR-USERNAME">GitHub</a> · <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
+    <p>© 2025 Anup Kumar Sharma | Portfolio Website</p>
   </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
