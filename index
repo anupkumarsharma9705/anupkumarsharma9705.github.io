@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* quick minimal styling if you skip styles.css */
+    body{font-family:system-ui,Arial;padding:32px;max-width:900px;margin:auto;line-height:1.6}
+    header{display:flex;justify-content:space-between;align-items:center}
+    nav a{margin-left:12px;text-decoration:none}
+    .btn{border:1px solid #ddd;padding:8px 12px;border-radius:8px}
+    h1{margin:0} section{margin:32px 0} .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    footer{margin-top:48px;font-size:.9rem;color:#666}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="resume.pdf" class="btn">Download Résumé</a>
+      <a href="mailto:you@email.com" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Entry-level Software Developer focusing on web, APIs, and IoT. I enjoy building clean, reliable systems.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article>
+        <h3>Project One</h3>
+        <p>Short description of what it does and the stack used.</p>
+        <p><a href="https://github.com/YOUR-USERNAME/project-one">Code</a> · <a href="#">Live</a></p>
+      </article>
+      <article>
+        <h3>Project Two</h3>
+        <p>Short description. What problem does it solve?</p>
+        <p><a href="https://github.com/YOUR-USERNAME/project-two">Code</a></p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="y"></span> Your Name · <a href="https://github.com/YOUR-USERNAME">GitHub</a> · <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
